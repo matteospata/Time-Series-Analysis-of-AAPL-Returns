@@ -1,4 +1,4 @@
-# Financial Time Series Lab
+# Financial Time Series Analysis
 
 An end-to-end, reproducible research pipeline for financial time-series analysis. The project studies daily equity prices and log returns through classical econometrics, volatility modeling, risk estimation, neural forecasting, and out-of-sample evaluation.
 
