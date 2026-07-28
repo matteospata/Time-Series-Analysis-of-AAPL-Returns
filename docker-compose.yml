@@ -1,0 +1,10 @@
+services:
+  financial-ts:
+    build: .
+    environment:
+      FINANCIAL_SEED: "42"
+      MPLCONFIGDIR: "/tmp/matplotlib"
+    volumes:
+      - ./data:/app/data:ro
+      - ./artifacts:/app/artifacts
+    command: ["run", "--ticker", "AAPL", "--years", "10", "--output", "artifacts/aapl-10y", "--lstm-epochs", "30", "--lstm-window", "20"]
